@@ -2,10 +2,9 @@
 #define DRAW_HPP
 
 #include <SFML/Graphics.hpp>
-
-#define NUM_ROWS 8
-#define NUM_COLS 8
+#include "board.hpp"
 
 void drawBoard(sf::RenderWindow& window);
+void drawPieces(sf::RenderWindow& window, Board& board, sf::Sprite pieceSprites[]);
 
 #endif // DRAW_HPP
